@@ -11,7 +11,7 @@ import (
 
 var codeRe = regexp.MustCompile(`^[A-Z0-9_]{1,64}$`)
 
-// EventCode — человекочитаемый код события (уникален в справочнике).
+// EventCode — код события (уникален в справочнике).
 type EventCode struct{ v string }
 
 func NewCode(s string) (EventCode, error) {
